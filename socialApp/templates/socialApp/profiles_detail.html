@@ -1,0 +1,14 @@
+<div class="container"></div>
+<p>Hello there <strong>{{ request.user }},</strong>
+    Welcome to your profile
+</p>
+<h5>Here is your bio</h5>
+{{ profiles.bio }}
+<p>And here is your profile pic</p>
+<img src="{{profiles.profile_pic.url}}" alt="">
+<h3>
+    <li>
+        <a href="{{ profiles.get_update_url}}">+Update Your profile</a>
+    </li>
+</h3>  
+</div>

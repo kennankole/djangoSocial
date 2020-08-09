@@ -1,0 +1,7 @@
+<div class="container">
+    <form action="{{profiles.get_update_url}}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit">Update Your profile</button>
+    </form>
+</div>
